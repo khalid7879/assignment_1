@@ -1,0 +1,368 @@
+/* style.css */
+
+/* Navbar Styles */
+.navbar {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333; /* Dark gray text color */
+  }
+  
+  .register-button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Banner Section Styles */
+  .banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+  
+  .text-container {
+    text-align: center;
+  }
+  
+  .text-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Image Styling */
+  .image-container img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 768px) {
+    .banner-section {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .image-container {
+      width: 50%;
+      margin-bottom: 0;
+    }
+  
+    .text-container {
+      text-align: left;
+      margin-right: 20px;
+    }
+  }
+
+  /* ... Existing CSS styles ... */
+
+#clients {
+    text-align: center;
+    padding: 50px 0; /* Adjust padding as needed */
+  }
+  
+  #clients h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  #clients p {
+    margin-bottom: 40px;
+  }
+  
+  .client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adjust gap between logos */
+  }
+  
+  .client-logos img {
+    max-width: 100px; /* Adjust max-width as needed */
+     height: auto;
+  }
+
+
+
+
+
+
+  .features {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .feature-container {
+    display: flex;
+    justify-content: space-between; /* Features side-by-side */
+    flex-wrap: wrap; /* Allow features to wrap on smaller screens */
+  }
+  
+  .feature {
+    text-align: center;
+    margin: 20px;
+    width: 30%; /* Adjust width as needed */
+  }
+  
+  .feature img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  /* মোবাইল ডিভাইসের জন্য স্টাইল */
+  @media (max-width: 768px) {
+    .feature-container {
+      flex-direction: column; /* Stack features vertically */
+    }
+  
+    .feature {
+      width: 100%; /* Make each feature full width on mobile */
+    }
+  }
+
+
+  .stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat .icon {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .stat .icon img {
+    width: 40px; /* Adjust as needed */
+  }
+  
+  .stat .stat-text {
+    display: block;
+  }
+  
+  .stat .number {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .stat .label {
+    font-size: 14px;
+    color: #888;
+  }
+
+  .container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .card {
+    width: 30%;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* For hover effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Hover effect */
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: 30%;
+    margin-bottom: 30%;
+  }
+  
+  .card h3 {
+    margin-bottom: 5px;
+  }
+  
+  .readmore {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      flex-direction: column; /* Stack cards vertically on mobile */
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 900px;
+  }
+  
+  .image-container {
+    width: 40%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .form-container {
+    width: 50%;
+    padding: 20px;
+    background-color: ;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .image-container,
+    .form-container {
+      width: 100%;
+    }
+  }
+
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  
+  
+  .footer-section {
+    margin-right: 40px; /* Adjust as needed */
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 20px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust this value to control spacing */
+  }
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+
+
+  
